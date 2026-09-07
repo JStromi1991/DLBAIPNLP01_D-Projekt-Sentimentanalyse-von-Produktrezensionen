@@ -1,0 +1,8 @@
+{
+  "n_train": 11787,
+  "n_test": 2947,
+  "n_features": 20000,
+  "accuracy": 0.6888361045130641,
+  "majority_baseline_accuracy": 0.6399728537495758,
+  "majority_class": 5
+}
