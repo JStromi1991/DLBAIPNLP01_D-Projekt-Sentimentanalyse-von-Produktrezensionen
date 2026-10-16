@@ -2,18 +2,6 @@
 Sammelt eine kompakte Stichprobe aus dem Amazon-Reviews-2023-Datensatz
 (McAuley Lab, 2023) fuer drei Produktkategorien.
 
-WICHTIG: Dieses Skript muss LOKAL (z. B. in Google Colab oder auf dem
-eigenen Rechner) ausgefuehrt werden, NICHT in der Cloud-Sandbox von Claude -
-von dort ist der Zugriff auf externe Datenserver aus Sicherheitsgruenden
-gesperrt.
-
-Vorgehen:
-1. Dieses Skript in Google Colab hochladen (oder lokal mit
-   `pip install requests` ausfuehren).
-2. Ausfuehren -> erzeugt fuer jede Kategorie eine CSV-Datei
-   (z. B. reviews_Video_Games.csv) mit ca. 5000 Rezensionen.
-3. Die drei erzeugten CSV-Dateien wieder im Chat mit Claude hochladen.
-
 Hinweis: Es werden nur die ersten ~50.000 Zeilen jeder (sehr grossen,
 unkomprimierten .jsonl-) Rohdaten-Datei gestreamt (nicht komplett
 heruntergeladen), daraus wird eine Zufallsstichprobe von SAMPLE_SIZE
@@ -104,9 +92,7 @@ def main() -> None:
         dt = time.time() - t0
         print(f"[{category}] gespeichert unter {out_path} ({dt:.1f}s)\n")
 
-    print("Fertig! Bitte die erzeugten CSV-Dateien "
-          "(reviews_Video_Games.csv, reviews_Electronics.csv, "
-          "reviews_Pet_Supplies.csv) im Chat hochladen.")
+    print("Fertig!")
 
 
 if __name__ == "__main__":
