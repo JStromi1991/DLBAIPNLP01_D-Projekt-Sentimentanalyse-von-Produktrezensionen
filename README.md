@@ -55,3 +55,7 @@ cd scripts && python train_and_evaluate.py
 
 Siehe `results/metrics_summary.json`, `results/confusion_matrix.csv` und
 `figures/confusion_matrix.png`.
+
+
+## Hinweis zur Erstellung dieses Projekts
+Zur Unterstützung wurden Claude (Anthropic) und Synthea zur Auswertung und Verifizierung der erarbeiteten Projektergebnisse genutzt. 
